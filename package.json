@@ -1,0 +1,26 @@
+{
+  "name": "yellowproject2.bitbucket.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  },
+  "devDependencies": {
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://a_redemax@bitbucket.org/yellowteamid/yellowproject2.bitbucket.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/yellowteamid/yellowproject2.bitbucket.io#readme"
+}
