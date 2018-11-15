@@ -1,0 +1,52 @@
+@import "variables";
+
+.button {
+    outline: none;
+    text-transform: uppercase;
+    padding: 23px 20px 21px 20px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.73px;
+    cursor: pointer;
+    transition: all 200ms;
+
+    &_primary{
+        background-color: $colorPrimary;
+        color: $colorWhite;
+
+        &:hover {
+            background-color: $colorHover;
+        }
+
+        &:active,
+        &:focus {
+            background-color: $colorHover;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    }
+
+    &_outlined {
+        background-color: inherit;
+        color: $colorPrimary;
+        border: 2px solid $colorPrimary;
+
+        &:hover {
+            background-color: $colorPrimary;
+            color: $colorWhite;
+        }
+
+        &:active,
+        &:focus {
+            background-color: $colorPrimary;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    }
+
+    &_small {
+        padding: 15px 20px 14px 20px;
+    }
+}
