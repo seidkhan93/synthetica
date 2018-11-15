@@ -1,0 +1,31 @@
+@import "variables";
+
+.link {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	padding-bottom: 11px;
+
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 15px;
+	letter-spacing: 1.73px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	color: $colorPrimary; 
+	border-bottom-style: solid;
+	border-bottom-color: rgba(0,0,0,0);
+	border-bottom-width: 2px;
+	transition: border-bottom-color .3s;
+
+	&:hover {
+		border-bottom-color: $colorPrimary;
+	}
+
+	&_is_hover {
+		border-bottom-color: $colorPrimary;
+	}
+}
