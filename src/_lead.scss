@@ -1,0 +1,27 @@
+$colorLead: #4D5256;
+$sizeLead: 15px;
+$fwLead: 700;
+$bgLeadAfter: #66E0E5;
+
+.lead {
+	display: block;
+	position: relative;
+	line-height: 18px;
+	height: auto;
+	font-size: $sizeLead;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: $fwLead;
+	color: $colorLead;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 31px;
+        height: 2px;
+        border-radius: 2px;
+        background: $bgLeadAfter;
+        margin-top: 15px;
+        margin-left: 1px;
+    }
+}
