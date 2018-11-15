@@ -1,0 +1,60 @@
+@import "variables";
+
+.title {
+
+		&_bright {
+				color: $white;
+		}
+
+		&_align-center {
+				text-align: center;
+		}
+
+		&_on-img {
+				line-height: 18px;
+				letter-spacing: 2px;
+				font-weight: 500;
+		}
+
+		&_numbers {
+				font-weihght: 700;
+				font-size: 48px;
+				line-height: 59px;
+				letter-spacing: 6.4px;
+		}
+}
+
+.subtitle {
+
+		&_bright {
+				color: $white;
+		}
+
+		&_on-img {
+				font-size: 15px;
+				line-height: 18px;
+				letter-spacing: 2px;
+				font-weight: 500;
+		}
+
+		&_align-center {
+				text-align: center;
+		}
+
+		&__progress-bar {//it will use on first img article and on data
+				font-size: 13px;
+				line-height: 15px;
+				font-weight: 600;
+				letter-spacing: 1.73px;
+		}
+
+		&__article {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: 500;
+				color: $art_color;
+		}
+}
+
+
+
