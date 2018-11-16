@@ -1,18 +1,15 @@
-$colorLead: #4D5256;
-$sizeLead: 15px;
-$fwLead: 700;
-$bgLeadAfter: #66E0E5;
+@import "variables";
 
 .lead {
-	display: block;
-	position: relative;
-	line-height: 18px;
-	height: auto;
-	font-size: $sizeLead;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: $fwLead;
-	color: $colorLead;
+    display: block;
+    position: relative;
+    line-height: 18px;
+    height: auto;
+    font-size: $sizeLead;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: $fwLead;
+    color: $colorLead;
 
     &::after {
         content: "";
