@@ -1,10 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,500");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 /*!
  * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,500");
 @-ms-viewport {
   width: device-width; }
 
@@ -1137,11 +1169,11 @@ html {
 .button {
   outline: none;
   text-transform: uppercase;
-  padding: 23px 20px 21px 20px;
+  padding: 23px 20px 23px 20px;
   text-align: center;
   font-family: inherit;
   font-size: 13px;
-  line-height: 15px;
+  line-height: 14px;
   letter-spacing: 1.73px;
   cursor: pointer;
   transition: all 200ms; }
@@ -1191,7 +1223,7 @@ html {
   .link_is_hover {
     border-bottom-color: #66e0e5; }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -1309,3 +1341,48 @@ body {
   font-weight: 500;
   color: #414A52; }
 
+.text_center {
+  text-align: center; }
+
+.text_white {
+  color: #ffffff; }
+
+.m-b-45 {
+  margin-bottom: 45px; }
+
+.m-b-62 {
+  margin-bottom: 62px; }
+
+.m-b-130 {
+  margin-bottom: 130px; }
+
+.m-t-163 {
+  margin-top: 163px; }
+
+.main {
+  position: relative;
+  text-align: center;
+  font-family: inherit;
+  color: #ffffff;
+  height: auto;
+  background-color: #f2f3f5; }
+  .main::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-image: url("../stylesheets/images/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .main__title {
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 0.75px;
+    max-width: 31ch; }
+  .main__paragraph {
+    letter-spacing: 0.83px;
+    line-height: 26px;
+    max-width: 78ch; }
