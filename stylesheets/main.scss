@@ -41,4 +41,21 @@ $mainBackgroundColor: #414a52;
         line-height: 26px;
         max-width: 78ch;
     }
+
+    &__input {
+        width: 10px;
+        height: 10px;
+
+        margin: {
+            right: 10px;
+            bottom: 37px;
+        }
+
+        border: {
+            radius: 50%;
+            color: $colorWhite;
+            style: solid;
+            width: 2px;
+        }
+    }
 }
