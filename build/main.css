@@ -1364,7 +1364,7 @@ body {
   color: #414A52; }
 
 .video {
-  background: #414A52 url(video.jpg) center top no-repeat;
+  background: #414A52 url(../stylesheets/images/video.jpg) center top no-repeat;
   height: 0;
   background-size: cover;
   cursor: pointer;
@@ -1457,3 +1457,18 @@ body {
     border-style: solid;
     border-width: 2px; }
 
+.row_top-padding {
+  padding-top: 70px; }
+
+.row_bottom-padding {
+  padding-bottom: 50px; }
+
+.videoblock__paragraph {
+  font-size: 15px;
+  line-height: 27px;
+  text-align: left;
+  color: #4D5256; }
+
+@media screen and (max-width: 576px) {
+  .videoblock__lead {
+    margin-bottom: 30px; } }
