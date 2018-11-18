@@ -7,7 +7,7 @@ $mainBackgroundColor: #414a52;
     text-align: center;
     font-family: inherit;
     color: $colorWhite;
-    height: auto;
+    height: 680px;
 
     background: {
         color: $mainBackgroundColor;
@@ -40,6 +40,37 @@ $mainBackgroundColor: #414a52;
         letter-spacing: 0.83px;
         line-height: 26px;
         max-width: 78ch;
+    }
+
+    &_sticked_bar {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+
+    &_sticked_title {
+        position: absolute;
+        left: 50%;
+        top: 163px;
+        margin: 0;
+        transform: translateX(-50%);
+    }
+
+    &_sticked_button {
+        position: absolute;
+        left: 50%;
+        top: 450px;
+        margin: 0;
+        transform: translateX(-50%);
+    }
+
+    &_sticked_paragraph {
+        position: absolute;
+        left: 50%;
+        top: 328px;
+        margin: 0;
+        transform: translateX(-50%);
     }
 
     &__input {

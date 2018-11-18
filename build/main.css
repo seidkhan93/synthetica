@@ -1386,7 +1386,7 @@ body {
   text-align: center;
   font-family: inherit;
   color: #ffffff;
-  height: auto;
+  height: 680px;
   background-color: #414a52; }
   .main::before {
     content: '';
@@ -1408,6 +1408,29 @@ body {
     letter-spacing: 0.83px;
     line-height: 26px;
     max-width: 78ch; }
+  .main_sticked_bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px; }
+  .main_sticked_title {
+    position: absolute;
+    left: 50%;
+    top: 163px;
+    margin: 0;
+    transform: translateX(-50%); }
+  .main_sticked_button {
+    position: absolute;
+    left: 50%;
+    top: 450px;
+    margin: 0;
+    transform: translateX(-50%); }
+  .main_sticked_paragraph {
+    position: absolute;
+    left: 50%;
+    top: 328px;
+    margin: 0;
+    transform: translateX(-50%); }
   .main__input {
     width: 10px;
     height: 10px;
