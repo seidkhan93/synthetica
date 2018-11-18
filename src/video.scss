@@ -1,0 +1,17 @@
+.video {
+    background: #414A52 url(video.jpg) center top no-repeat;
+    height: 0;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    overflow:hidden; 
+    padding-bottom: 56.25%; 
+}
+
+.video iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+}
