@@ -3,11 +3,11 @@
 .button {
     outline: none;
     text-transform: uppercase;
-    padding: 23px 20px 21px 20px;
+    padding: 23px 20px 23px 20px;
     text-align: center;
     font-family: inherit;
     font-size: 13px;
-    line-height: 15px;
+    line-height: 14px;
     letter-spacing: 1.73px;
     cursor: pointer;
     transition: all 200ms;
@@ -47,6 +47,6 @@
     }
 
     &_small {
-        padding: 15px 20px 14px 20px;
+        padding: 15px 20px 15px 20px;
     }
 }

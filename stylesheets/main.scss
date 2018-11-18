@@ -1,0 +1,92 @@
+@import "../src/variables";
+$mainImage: url("../stylesheets/images/main.jpg");
+$mainBackgroundColor: #414a52;
+//main section
+.main {
+    position: relative;
+    text-align: center;
+    font-family: inherit;
+    color: $colorWhite;
+    height: 680px;
+
+    background: {
+        color: $mainBackgroundColor;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+
+        background: {
+            image: $mainImage;
+            size: cover;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    &__title {
+        font-size: 45px;
+        line-height: 60px;
+        letter-spacing: 0.75px;
+        max-width: 31ch;
+    }
+
+    &__paragraph {
+        letter-spacing: 0.83px;
+        line-height: 26px;
+        max-width: 78ch;
+    }
+
+    &_sticked_bar {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+
+    &_sticked_title {
+        position: absolute;
+        left: 50%;
+        top: 163px;
+        margin: 0;
+        transform: translateX(-50%);
+    }
+
+    &_sticked_button {
+        position: absolute;
+        left: 50%;
+        top: 450px;
+        margin: 0;
+        transform: translateX(-50%);
+    }
+
+    &_sticked_paragraph {
+        position: absolute;
+        left: 50%;
+        top: 328px;
+        margin: 0;
+        transform: translateX(-50%);
+    }
+
+    &__input {
+        width: 10px;
+        height: 10px;
+
+        margin: {
+            right: 10px;
+            bottom: 37px;
+        }
+
+        border: {
+            radius: 50%;
+            color: $colorWhite;
+            style: solid;
+            width: 2px;
+        }
+    }
+}
