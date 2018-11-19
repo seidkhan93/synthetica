@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,500");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,400i,500");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,400i,500");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
   margin: 0;
   padding: 0;
@@ -1330,10 +1330,10 @@ body {
 .title_on-img {
   line-height: 18px;
   letter-spacing: 2px;
-  font-weight: 500; }
+  font-weight: 600; }
 
 .title_numbers {
-  font-weihght: 700;
+  font-weight: 700;
   font-size: 48px;
   line-height: 59px;
   letter-spacing: 6.4px;
@@ -1463,12 +1463,72 @@ body {
 .row_bottom-padding {
   padding-bottom: 50px; }
 
-.videoblock__paragraph {
-  font-size: 15px;
-  line-height: 27px;
-  text-align: left;
-  color: #4D5256; }
-
 @media screen and (max-width: 576px) {
   .videoblock__lead {
     margin-bottom: 30px; } }
+
+.statistics {
+  position: relative;
+  text-align: center;
+  font-family: inherit;
+  color: #ffffff;
+  height: 400px;
+  background-color: #414a52; }
+  .statistics::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url("../stylesheets/images/num_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .statistics__description {
+    text-transform: uppercase; }
+  .statistics__logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px; }
+  .statistics_margin-top {
+    margin-top: 160px; }
+
+.col_right-border {
+  border-right: 2px solid rgba(255, 255, 255, 0.25); }
+
+.footer {
+  background-color: #414a52; }
+  .footer__header {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding-bottom: 27px;
+    padding-top: 72px; }
+  .footer__logo {
+    margin-right: 18px; }
+  .footer__title {
+    margin-left: 18px; }
+  .footer__subtitle {
+    font-size: 14px;
+    line-height: 25px; }
+  .footer_border {
+    min-height: 50px;
+    width: 1170px;
+    border-bottom: 2px solid #fff; }
+  .footer__nav-bar {
+    padding-top: 36px; }
+  .footer__list {
+    padding-right: 60px;
+    text-decoration: none;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap; }
+  .footer_copyright {
+    padding-top: 32px;
+    padding-bottom: 100px;
+    color: rgba(255, 255, 255, 0.5); }
+  .footer__links {
+    text-decoration: none; }
