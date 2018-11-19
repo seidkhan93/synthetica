@@ -1560,7 +1560,7 @@ body {
   .footer_border {
     min-height: 50px;
     width: 1170px;
-    border-bottom: 2px solid #fff; }
+    border-bottom: 2px solid #ffffff; }
   .footer__nav-bar {
     padding-top: 36px; }
   .footer__list {
@@ -1576,3 +1576,5 @@ body {
     color: rgba(255, 255, 255, 0.5); }
   .footer__links {
     text-decoration: none; }
+  .footer_italic {
+    font-style: oblique; }

@@ -128,8 +128,8 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
     }
 
     &_background_secondary {
-        background: {
-    		color: $mainBackgroundColor;
+		    background: {
+				color: $mainBackgroundColor;
     	}
 
         &::before {
@@ -141,10 +141,10 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
     		opacity: 0.5;
 
     		background: {
-    			image: $newsImageSecondary;
-    			size: cover;
-    			repeat: no-repeat;
-    			position: center;
+	    			image: $newsImageSecondary;
+	    			size: cover;
+	    			repeat: no-repeat;
+	    			position: center;
     		}
     	}
     }
@@ -172,13 +172,13 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
         height: 100%;
         opacity: 0.5;
 
-    background: {
-        image: $statisticsImage;
-        size: cover;
-        repeat: no-repeat;
-        position: center;
-    }
-}
+		    background: {
+		        image: $statisticsImage;
+		        size: cover;
+		        repeat: no-repeat;
+		        position: center;
+		    }
+		}
     &__description {
     		text-transform: uppercase;
 		}
@@ -227,7 +227,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		&_border {
 				min-height: 50px;
 				width: 1170px;
-				border-bottom: 2px solid #fff;
+				border-bottom: 2px solid $white;
 		}
 
 		&__nav-bar {
@@ -251,6 +251,10 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 
 		&__links {
 				text-decoration: none;
+		}
+
+		&_italic {
+				font-style: oblique;
 		}
 
 }
