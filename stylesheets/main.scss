@@ -2,6 +2,7 @@
 $mainImage: url("../stylesheets/images/main.jpg");
 $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 $mainBackgroundColor: #414a52;
+$bgMask: url("../stylesheets/images/Mask.jpg");
 
 //main section
 .main {
@@ -113,32 +114,34 @@ $mainBackgroundColor: #414a52;
 
 
 .statistics {
-		
+	
 		position: relative;
-		text-align: center;
-		font-family: inherit;
-		color: $colorWhite;
-		height: 400px;
+        text-align: center;
+        font-family: inherit;
+        color: $colorWhite;
+        height: 400px;
 
-		background: {
-			color: $mainBackgroundColor;
-		}
+        background: {
+            color: $mainBackgroundColor;
+        }
 
-		&::before {
-			content: '';
-			position: absolute;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0.5;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
 
-			background: {
-			image: $statisticsImage;
-			size: cover;
-			repeat: no-repeat;
-			position: center;
-			}	
-		}
+        background: {
+            image: $statisticsImage;
+            size: cover;
+            repeat: no-repeat;
+            position: center;
+        }
+        }
+
+			
 
     &__description {
     		text-transform: uppercase;
