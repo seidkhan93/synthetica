@@ -1,5 +1,7 @@
 @import "../src/variables";
 $mainImage: url("../stylesheets/images/main.jpg");
+$newsImagePrimary: url("../stylesheets/images/news_background_primary.jpg");
+$newsImageSecondary: url("../stylesheets/images/news_background_seconary.jpg");
 $mainBackgroundColor: #414a52;
 //main section
 .main {
@@ -115,5 +117,38 @@ $mainBackgroundColor: #414a52;
     }
 }
 
+//news section
+.news {
+    font-family: inherit;
+    font-size: inherit;
 
+    &_high {
+        height: 500px;
+    }
 
+    &__paragraph {
+        max-width: 58ch;
+    }
+
+    &_background_secondary {
+        background: {
+    		color: $mainBackgroundColor;
+    	}
+
+        &::before {
+    		content: '';
+    		position: absolute;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+    		opacity: 0.5;
+
+    		background: {
+    			image: $newsImageSecondary;
+    			size: cover;
+    			repeat: no-repeat;
+    			position: center;
+    		}
+    	}
+    }
+}
