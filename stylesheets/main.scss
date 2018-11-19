@@ -1,7 +1,9 @@
 @import "../src/variables";
 $mainImage: url("../stylesheets/images/main.jpg");
-$statisticsImage: url("../stylesheets/images/num_bg.jpg");
+$newsImagePrimary: url("../stylesheets/images/news_background_primary.jpg");
+$newsImageSecondary: url("../stylesheets/images/news_background_seconary.jpg");
 $mainBackgroundColor: #414a52;
+$statisticsImage: url("../stylesheets/images/num_bg.jpg");
 
 //main section
 .main {
@@ -111,9 +113,46 @@ $mainBackgroundColor: #414a52;
     }
 }
 
+//news section
+.news {
+    font-family: inherit;
+    font-size: inherit;
 
+    &_high {
+        height: 500px;
+    }
+
+    &__paragraph {
+        max-width: 58ch;
+    }
+
+    &_background_secondary {
+        background: {
+    		color: $mainBackgroundColor;
+    	}
+
+        &::before {
+    		content: '';
+    		position: absolute;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+    		opacity: 0.5;
+
+    		background: {
+    			image: $newsImageSecondary;
+    			size: cover;
+    			repeat: no-repeat;
+    			position: center;
+    		}
+    	}
+    }
+}
+
+
+//statistics
 .statistics {
-		
+
 		position: relative;
 		text-align: center;
 		font-family: inherit;
@@ -137,7 +176,7 @@ $mainBackgroundColor: #414a52;
 			size: cover;
 			repeat: no-repeat;
 			position: center;
-			}	
+			}
 		}
 
     &__description {
@@ -158,9 +197,9 @@ $mainBackgroundColor: #414a52;
 .col {
 		&_right-border {
 				border-right: 2px solid rgba(255, 255, 255, 0.25);
-		}	
+		}
 }
-
+//footer
 .footer {
 		background-color: $mainBackgroundColor;
 
@@ -176,7 +215,7 @@ $mainBackgroundColor: #414a52;
 		&__logo {
 				margin-right: 18px;
 		}
-		
+
 		&__title {
 				margin-left: 18px;
 		}
@@ -188,9 +227,9 @@ $mainBackgroundColor: #414a52;
 		&_border {
 				min-height: 50px;
 				width: 1170px;
-				border-bottom: 2px solid #fff; 
+				border-bottom: 2px solid #fff;
 		}
-		
+
 		&__nav-bar {
 				padding-top: 36px;
 		}
@@ -201,13 +240,13 @@ $mainBackgroundColor: #414a52;
 				clear: both;
     		display: inline-block;
     		overflow: hidden;
-    		white-space: nowrap;		
+    		white-space: nowrap;
     }
 
 		&_copyright {
 				padding-top: 32px;
 				padding-bottom: 100px;
-				color: rgba(255, 255, 255, 0.5); 
+				color: rgba(255, 255, 255, 0.5);
 		}
 
 		&__links {
@@ -215,5 +254,3 @@ $mainBackgroundColor: #414a52;
 		}
 
 }
-
-
