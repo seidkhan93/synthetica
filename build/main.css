@@ -1490,7 +1490,6 @@ body {
   .videoblock__lead {
     margin-bottom: 30px; } }
 
-<<<<<<< HEAD
 .news {
   font-family: inherit;
   font-size: inherit; }
@@ -1511,7 +1510,7 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
-=======
+
 .statistics {
   position: relative;
   text-align: center;
@@ -1577,4 +1576,22 @@ body {
     color: rgba(255, 255, 255, 0.5); }
   .footer__links {
     text-decoration: none; }
->>>>>>> 2f6b41ae44b42f403fa732090726ca4a234757f1
+
+.promotion {
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  height: 500px;
+  width: 100%;
+  background-color: #414a52; }
+  .promotion::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url("../stylesheets/images/news_background_seconary.jpg"), url("../stylesheets/images/news_background_primary.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center,  left top; }
