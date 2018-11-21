@@ -30,9 +30,9 @@ var dict = [
 
 for (var i = 0, l = Object.keys(dict).length; i < l; i++) {
     $(contPath+"_"+i).append(
-        '<div class="row main_sticked_title"><div class="col d-flex justify-content-center"><h1 class="main__title">' + dict[i].title + '</h1></div></div>' +
-        '<div class="row main_sticked_button    "><div class="col"><button class="button button_primary ">' + dict[i].buttonText + '</button></div></div>' +
-        '<div class="row  main_sticked_paragraph"><div class="col d-flex justify-content-center"><p class="main__paragraph">' + dict[i].paragraph + '</p></div></div>' );
+        '<div class="row main_sticked_title"><div class="col d-flex justify-content-center"><h1 class="main__title lg-title">' + dict[i].title + '</h1></div></div>' +
+        '<div class="row main_sticked_button main_sticked_button-lg"><div class="col"><button class="button button_primary ">' + dict[i].buttonText + '</button></div></div>' +
+        '<div class="row  main_sticked_paragraph lg-paragraph"><div class="col d-flex justify-content-center"><p class="main__paragraph">' + dict[i].paragraph + '</p></div></div>' );
 }
 tabFunction('0');
 function tabFunction(id) {
