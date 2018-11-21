@@ -1,175 +1,179 @@
 @import "variables";
 
 .text_center {
-    text-align:center;
+    text-align:center !important;
 }
 
 .vertical-align {
-    vertical-align: center;
+    vertical-align: center !important;
 }
 
 .text_white {
-    color: $colorWhite;
+    color: $colorWhite !important;
 }
 
 .m-b-20 {
-	margin-bottom: 20px;
+	margin-bottom: 20px !important;
 }
 
 .m-b-30 {
-	margin-bottom: 30px;
+	margin-bottom: 30px !important;
 }
 
 .m-b-45 {
-    margin-bottom: 45px;
+    margin-bottom: 45px !important;
 }
 
 .m-b-55 {
-	margin-bottom: 55px;
+	margin-bottom: 55px !important;
 }
 
 .m-b-62 {
-    margin-bottom: 62px;
+    margin-bottom: 62px !important;
 }
 
 .m-b-130 {
-    margin-bottom: 130px;
+    margin-bottom: 130px !important;
 }
 
 .m-t-163 {
-    margin-top: 163px;
+    margin-top: 163px !important;
 }
 
 .m-b-84 {
-    margin-bottom: 84px;
+    margin-bottom: 84px !important;
 }
 
 .m-l-65 {
-    margin-left: 65px;
+    margin-left: 65px !important;
 }
 
 .m-b-80 {
-    margin-bottom: 80px;
+    margin-bottom: 80px !important;
 }
 
 .m-b-13 {
-    margin-bottom: 13px;
+    margin-bottom: 13px !important;
 }
 
 .m-b-38 {
-    margin-bottom: 38px;
+    margin-bottom: 38px !important;
 }
 
 .p-t-125 {
-    padding-top: 125px;
+    padding-top: 125px !important;
 }
 
 .m-none {
-	margin: 0;
+	margin: 0 !important;
+}
+
+.p-none {
+	padding: 0 !important;
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 	.m-b-sm-20 {
-		margin-bottom: 20px;
+		margin-bottom: 20px !important;
 	}
 
 	.m-b-sm-30 {
-		margin-bottom: 30px;
+		margin-bottom: 30px !important;
 	}
 
 	.m-b-sm-45 {
-	    margin-bottom: 45px;
+	    margin-bottom: 45px !important;
 	}
 
 	.m-b-sm-55 {
-		margin-bottom: 55px;
+		margin-bottom: 55px !important;
 	}
 
 	.m-b-sm-62 {
-	    margin-bottom: 62px;
+	    margin-bottom: 62px !important;
 	}
 
 	.m-b-sm-130 {
-	    margin-bottom: 130px;
+	    margin-bottom: 130px !important;
 	}
 
 	.m-t-sm-163 {
-	    margin-top: 163px;
+	    margin-top: 163px !important;
 	}
 
 	.m-sm-none {
-		margin: 0;
+		margin: 0 !important;
 	}
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 	.m-b-md-20 {
-		margin-bottom: 20px;
+		margin-bottom: 20px !important;
 	}
 
 	.m-b-md-30 {
-		margin-bottom: 30px;
+		margin-bottom: 30px !important;
 	}
 
 	.m-b-md-45 {
-	    margin-bottom: 45px;
+	    margin-bottom: 45px !important;
 	}
 
 	.m-b-md-55 {
-		margin-bottom: 55px;
+		margin-bottom: 55px !important;
 	}
 
 	.m-b-md-62 {
-	    margin-bottom: 62px;
+	    margin-bottom: 62px !important;
 	}
 
 	.m-b-md-130 {
-	    margin-bottom: 130px;
+	    margin-bottom: 130px !important;
 	}
 
 	.m-t-md-163 {
-	    margin-top: 163px;
+	    margin-top: 163px !important;
 	}
 
 	.m-md-none {
-		margin: 0;
+		margin: 0 !important;
 	}
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 	.m-b-lg-20 {
-		margin-bottom: 20px;
+		margin-bottom: 20px !important;
 	}
 
 	.m-b-lg-30 {
-		margin-bottom: 30px;
+		margin-bottom: 30px !important;
 	}
 
 	.m-b-lg-45 {
-	    margin-bottom: 45px;
+	    margin-bottom: 45px !important;
 	}
 
 	.m-b-lg-55 {
-		margin-bottom: 55px;
+		margin-bottom: 55px !important;
 	}
 
 	.m-b-lg-62 {
-	    margin-bottom: 62px;
+	    margin-bottom: 62px !important;
 	}
 
 	.m-b-lg-130 {
-	    margin-bottom: 130px;
+	    margin-bottom: 130px !important;
 	}
 
 	.m-t-lg-163 {
-	    margin-top: 163px;
+	    margin-top: 163px !important;
 	}
 
 	.m-lg-none {
-		margin: 0;
+		margin: 0 !important;
 	}
 
 	.lg-title {
@@ -189,37 +193,37 @@
     }
 
     .promo-background-lg {
-        background-position: center;
+        background-position: center !important;
     }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 	.m-b-xl-20 {
-		margin-bottom: 20px;
+		margin-bottom: 20px !important;
 	}
 
 	.m-b-xl-45 {
-	    margin-bottom: 45px;
+	    margin-bottom: 45px !important;
 	}
 
 	.m-b-xl-55 {
-		margin-bottom: 55px;
+		margin-bottom: 55px !important;
 	}
 
 	.m-b-xl-62 {
-	    margin-bottom: 62px;
+	    margin-bottom: 62px !important;
 	}
 
 	.m-b-xl-130 {
-	    margin-bottom: 130px;
+	    margin-bottom: 130px !important;
 	}
 
 	.m-t-xl-163 {
-	    margin-top: 163px;
+	    margin-top: 163px !important;
 	}
 
 	.m-xl-none {
-		margin: 0;
+		margin: 0 !important;
 	}
 }
