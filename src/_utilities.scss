@@ -171,6 +171,25 @@
 	.m-lg-none {
 		margin: 0;
 	}	
+
+	.lg-title {
+        font-size: 45px !important;
+        line-height: 60px !important;
+    }
+
+    .lg-paragraph {
+        line-height: 26px !important;
+        max-width: 78ch !important;
+        top: 328px !important;
+    }
+
+    .main_sticked_button-lg {
+        top:450px !important;
+    }
+
+    .promo-background-lg {
+        background-position: center;
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)

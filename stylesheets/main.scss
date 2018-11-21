@@ -51,17 +51,21 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		}
 	}
 
+    &__content {
+        width: 100%;
+    }
+
 	&__title {
-		font-size: 45px;
-		line-height: 60px;
+		font-size: 24px;
+		line-height: 30px;
 		letter-spacing: 0.75px;
 		max-width: 31ch;
 	}
 
 	&__paragraph {
 		letter-spacing: 0.83px;
-		line-height: 26px;
-		max-width: 78ch;
+		line-height: 13px;
+		max-width: 156ch;
 	}
 
 	&_sticked_bar {
@@ -82,7 +86,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 	&_sticked_button {
 		position: absolute;
 		left: 50%;
-		top: 450px;
+		top: 500px;
 		margin: 0;
 		transform: translateX(-50%);
 	}
@@ -90,7 +94,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 	&_sticked_paragraph {
 		position: absolute;
 		left: 50%;
-		top: 328px;
+		top: 338px;
 		margin: 0;
 		transform: translateX(-50%);
 	}
@@ -442,6 +446,10 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
     width: 100%;
     color: $colorWhite;
 
+    &_distanced {
+        padding: 85px 0 100px;
+    }
+
      &__info_embarked {
          width: 315px;
          height: 2px;
@@ -493,6 +501,12 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 	    			position: center;
     		}
     	}
+    }
+
+    &__button {
+        position: relative;
+        z-index: 100;
+        background-color: transparent;
     }
 
 }
