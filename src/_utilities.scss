@@ -12,8 +12,20 @@
     color: $colorWhite;
 }
 
+.m-b-20 {
+	margin-bottom: 20px;
+}
+
+.m-b-30 {
+	margin-bottom: 30px;
+}
+
 .m-b-45 {
     margin-bottom: 45px;
+}
+
+.m-b-55 {
+	margin-bottom: 55px;
 }
 
 .m-b-62 {
@@ -44,10 +56,6 @@
     margin-bottom: 13px;
 }
 
-.m-b-30 {
-    margin-bottom: 30px;
-}
-
 .m-b-38 {
     margin-bottom: 38px;
 }
@@ -56,8 +64,115 @@
     padding-top: 125px;
 }
 
-@media (min-width: 992px) {
-    .lg-title {
+.m-none {
+	margin: 0;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	.m-b-sm-20 {
+		margin-bottom: 20px;
+	}
+
+	.m-b-sm-30 {
+		margin-bottom: 30px;
+	}
+
+	.m-b-sm-45 {
+	    margin-bottom: 45px;
+	}
+
+	.m-b-sm-55 {
+		margin-bottom: 55px;
+	}
+
+	.m-b-sm-62 {
+	    margin-bottom: 62px;
+	}
+
+	.m-b-sm-130 {
+	    margin-bottom: 130px;
+	}
+
+	.m-t-sm-163 {
+	    margin-top: 163px;
+	}
+
+	.m-sm-none {
+		margin: 0;
+	}	
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.m-b-md-20 {
+		margin-bottom: 20px;
+	}
+
+	.m-b-md-30 {
+		margin-bottom: 30px;
+	}
+
+	.m-b-md-45 {
+	    margin-bottom: 45px;
+	}
+
+	.m-b-md-55 {
+		margin-bottom: 55px;
+	}
+
+	.m-b-md-62 {
+	    margin-bottom: 62px;
+	}
+
+	.m-b-md-130 {
+	    margin-bottom: 130px;
+	}
+
+	.m-t-md-163 {
+	    margin-top: 163px;
+	}
+
+	.m-md-none {
+		margin: 0;
+	}	
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	.m-b-lg-20 {
+		margin-bottom: 20px;
+	}
+
+	.m-b-lg-30 {
+		margin-bottom: 30px;
+	}
+
+	.m-b-lg-45 {
+	    margin-bottom: 45px;
+	}
+
+	.m-b-lg-55 {
+		margin-bottom: 55px;
+	}
+
+	.m-b-lg-62 {
+	    margin-bottom: 62px;
+	}
+
+	.m-b-lg-130 {
+	    margin-bottom: 130px;
+	}
+
+	.m-t-lg-163 {
+	    margin-top: 163px;
+	}
+
+	.m-lg-none {
+		margin: 0;
+	}	
+
+	.lg-title {
         font-size: 45px !important;
         line-height: 60px !important;
     }
@@ -75,5 +190,35 @@
     .promo-background-lg {
         background-position: center;
     }
+}
 
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	.m-b-xl-20 {
+		margin-bottom: 20px;
+	}
+
+	.m-b-xl-45 {
+	    margin-bottom: 45px;
+	}
+
+	.m-b-xl-55 {
+		margin-bottom: 55px;
+	}
+
+	.m-b-xl-62 {
+	    margin-bottom: 62px;
+	}
+
+	.m-b-xl-130 {
+	    margin-bottom: 130px;
+	}
+
+	.m-t-xl-163 {
+	    margin-top: 163px;
+	}	
+
+	.m-xl-none {
+		margin: 0;
+	}
 }
