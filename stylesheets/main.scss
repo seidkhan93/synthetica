@@ -153,12 +153,10 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 
 //statistics
 .statistics {
-	
 		position: relative;
 	  text-align: center;
-	  font-family: inherit;
 	  color: $colorWhite;
-	  height: 400px;
+	  min-height: 400px;
 
     background: {
         color: $mainBackgroundColor;
@@ -168,6 +166,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
         content: '';
         position: absolute;
         left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
         opacity: 0.5;
@@ -179,6 +178,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		        position: center;
 		    }
 		}
+
     &__description {
     		text-transform: uppercase;
 		}
@@ -194,13 +194,30 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		}
 }
 
+@media screen and (max-width: 1200px) {
+	  .row_fixed-height {
+    		height: 350px;
+		}
+}
+
+@media screen and (max-width: 992px) {
+		.row_fixed-height {
+		    		height: 300px;
+		}
+}
+
 .col {
 		&_right-border {
 				border-right: 2px solid rgba(255, 255, 255, 0.25);
 		}
+
+    &_bottom-padding {
+        padding-bottom: 15px;
+		}
 }
 //footer
 .footer {
+		position: relative;
 		background-color: $mainBackgroundColor;
 
 		&__header {
@@ -219,6 +236,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		&__title {
 				margin-left: 18px;
 		}
+
 		&__subtitle {
 				font-size: 14px;
 				line-height: 25px;
@@ -226,7 +244,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 
 		&_border {
 				min-height: 50px;
-				width: 1170px;
+				width: 100%;
 				border-bottom: 2px solid $white;
 		}
 
