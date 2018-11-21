@@ -69,7 +69,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
 	.m-b-sm-20 {
 		margin-bottom: 20px;
 	}
@@ -100,7 +100,7 @@
 
 	.m-sm-none {
 		margin: 0;
-	}	
+	}
 }
 
 // Medium devices (tablets, 768px and up)
@@ -135,11 +135,11 @@
 
 	.m-md-none {
 		margin: 0;
-	}	
+	}
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 	.m-b-lg-20 {
 		margin-bottom: 20px;
 	}
@@ -170,7 +170,7 @@
 
 	.m-lg-none {
 		margin: 0;
-	}	
+	}
 
 	.lg-title {
         font-size: 45px !important;
@@ -178,6 +178,7 @@
     }
 
     .lg-paragraph {
+        font-size: 15px;
         line-height: 26px !important;
         max-width: 78ch !important;
         top: 328px !important;
@@ -193,7 +194,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 	.m-b-xl-20 {
 		margin-bottom: 20px;
 	}
@@ -216,7 +217,7 @@
 
 	.m-t-xl-163 {
 	    margin-top: 163px;
-	}	
+	}
 
 	.m-xl-none {
 		margin: 0;
