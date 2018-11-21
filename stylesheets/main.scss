@@ -172,16 +172,16 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		&_second {
 			background-image: $secondPersonImg;
 			background-position: center;
-
 		}
+
 		&_third {
 			background-image: $thirdPersonImg;
-			background-position: -150px center;
+			background-position: 40% center;
 		}
 
 		&_last {
 			background-image: $lastPersonImg;
-			background-position: -50px center;
+			background-position: 20% center;
 		}
 
 		&::before {
@@ -275,10 +275,6 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		letter-spacing: 1.73px;
 		color: $colorLead;
 		font-weight: 500;
-	}
-
-	&__bar:not([value]) {
-   		/* Styling here */
 	}
 
 	&__bar[value] {
