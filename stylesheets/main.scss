@@ -1,6 +1,22 @@
 @import "../src/variables";
+@import "../stylesheets/font-awesome/scss/fontawesome";
+@import "../stylesheets/font-awesome/scss/solid";
+@import "../stylesheets/font-awesome/scss/brands";
+
 $mainImage: url("../stylesheets/images/main.jpg");
 $mainBackgroundColor: #414a52;
+
+//crew
+$bgCrew: #f4f6f9;
+$crewLinkColor: rgba(102, 224, 229, .7);
+$bgPersonColor: #e9ebee;
+$bgPersonMaskColor: #4d5256;
+$socialColor: rgba(255, 255, 255, 0.75);
+$socialHoverColor: $colorWhite;
+$firstPersonImg: url("../stylesheets/images/crew-1.png");
+$secondPersonImg: url("../stylesheets/images/crew-2.png");
+$thirdPersonImg: url("../stylesheets/images/crew-3.png");
+$lastPersonImg: url("../stylesheets/images/crew-4.png");
 //main section
 .main {
 	position: relative;
@@ -114,6 +130,172 @@ $mainBackgroundColor: #414a52;
         margin-bottom: 30px;
     }
 }
+
+// The Crew
+
+.crew {
+	display: block;
+	margin: 0;
+	padding: 125px 0;
+	min-height: 830px;
+
+	background-color: $bgCrew;
+
+	&__title {
+		margin-left: 64px;
+		margin-bottom: 77px;
+	}
+}
+
+.person {
+	&__item {
+		display: block;
+		position: relative;
+		height: 270px;
+		text-align: center;
+
+		background: {
+			color: $bgPersonColor;
+			repeat: no-repeat;
+			size: cover;
+		} 
+
+		&_first {
+			background-image: $firstPersonImg;
+			background-position: center;
+		}
+
+		&_second {
+			background-image: $secondPersonImg;
+			background-position: center;
+
+		}
+		&_third {
+			background-image: $thirdPersonImg;
+			background-position: -150px center;
+		}
+
+		&_last {
+			background-image: $lastPersonImg;
+			background-position: -50px center;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			z-index: 100;
+			background-color: $bgPersonMaskColor;
+			opacity: 0.5;
+		}
+	}
+
+	&__link {
+		display: block;
+		position: relative;
+		z-index: 1000;
+		height: 100%;
+		padding: 79px 10px 65px;
+
+		opacity: 0;
+		
+		background-color: $crewLinkColor;
+		color: $colorWhite;
+
+		transition: opacity 150ms;
+	}
+
+	&__name {
+		margin-bottom: 10px;
+
+		font-family: inherit;
+		font-size: 15px;
+		line-height: 18px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	&__info {
+		margin-bottom: 33px;
+
+		font-family: inherit;
+		font-size: 15px;
+		line-height: 27px;
+		font-weight: 300;
+	}
+
+	&__item:hover > &__link{
+		opacity: 1;
+	}
+
+	&__social {
+		@extend %fa-icon;
+		@extend .fab;
+		text-decoration: none;
+		color: $socialColor;
+		transition: color 150ms;
+		font-size: 20px;
+
+		&:hover {
+			color: $socialHoverColor;
+		}
+
+		&_twitter::before {
+			content: fa-content($fa-var-twitter);
+		}
+
+		&_linkedin::before {
+			content: fa-content($fa-var-linkedin-in);
+		}
+	}
+
+	&__social:first-child {
+		margin-right: 5px;
+	}
+}
+
+
+.progress {
+
+	&__title {
+		margin-bottom: 15px;
+
+		font-family: inherit;
+		font-size: 13px;
+		line-height: 15px;
+		letter-spacing: 1.73px;
+		color: $colorLead;
+		font-weight: 500;
+	}
+
+	&__bar:not([value]) {
+   		/* Styling here */
+	}
+
+	&__bar[value] {
+		-webkit-appearance: none;
+   		appearance: none;
+		display: block;
+		width: 100%;
+		height: 10px;
+
+		&::-webkit-progress-bar {
+			background-color: $bgPersonMaskColor;
+		}
+
+		&::-webkit-progress-value {
+			background-color: $colorPrimary;
+		}
+	}
+}
+
+
+
 
 
 

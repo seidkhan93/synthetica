@@ -1,12 +1,9 @@
 @import "reset";
 @import "main";
-@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+@import "variables";
 @import "lead";
 @import "button";
-@import "link.scss";
-@import "reset";
-@import "main";
-@import "variables";
 @import "link";
 @import "text";
 @import "video";
