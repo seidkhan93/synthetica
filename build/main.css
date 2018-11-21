@@ -1578,6 +1578,7 @@ body {
     text-decoration: none; }
 
 .promotion {
+  display: block;
   position: relative;
   font-family: inherit;
   font-size: inherit;
@@ -1594,4 +1595,4 @@ body {
     background-image: url("../stylesheets/images/news_background_seconary.jpg"), url("../stylesheets/images/news_background_primary.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center,  left top; }
+    background-position: center center, bottom center; }
