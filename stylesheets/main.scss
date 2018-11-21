@@ -373,22 +373,22 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
         width: 50px;
         margin-right: 20px;
     }
-
-		&_margin-top {
-				margin-top: 160px;
-		}
 }
 
-@media screen and (max-width: 1200px) {
-	  .row_fixed-height {
-    		height: 350px;
-		}
-}
+.row {
+    &_top-padding {
+        padding-top: 70px;
+    }
 
-@media screen and (max-width: 992px) {
-		.row_fixed-height {
-		    		height: 300px;
-		}
+    &_bottom-padding {
+        padding-bottom: 15px;
+    }
+
+    &_fixed-height {
+        position: relative;
+        height: 400px;
+        background: $bgColorBenefits;
+	}
 }
 
 .col {
@@ -399,6 +399,18 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
     &_bottom-padding {
         padding-bottom: 15px;
 		}
+}
+
+@media screen and (max-width: 1200px) {
+    .row_fixed-height {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row_fixed-height {
+        height: 300px;
+    }
 }
 //footer
 .footer {
@@ -444,6 +456,10 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
     		display: inline-block;
     		overflow: hidden;
     		white-space: nowrap;
+    }
+
+    &_padding-right{
+    		padding-right: 60px;
     }
 
 		&_copyright {
