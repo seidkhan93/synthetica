@@ -3,6 +3,7 @@ $mainImage: url("../stylesheets/images/main.jpg");
 $newsImagePrimary: url("../stylesheets/images/news_background_primary.jpg");
 $newsImageSecondary: url("../stylesheets/images/news_background_seconary.jpg");
 $mainBackgroundColor: #414a52;
+$promoBackgroundColor: #414a52;
 $bgMask: url("../stylesheets/images/Mask.jpg");
 $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 
@@ -259,26 +260,60 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
     position: relative;
     font-family: inherit;
     font-size: inherit;
-    height: 500px;
     width: 100%;
+    color: $colorWhite;
 
-    background: {
-        color: $mainBackgroundColor;
+     &__info_embarked {
+         width: 315px;
+         height: 2px;
+         background-color: $colorWhite;
+     }
+
+    &__info {
+        padding: 166px 0 172px;
+        height: 500px;
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.5;
+    &_background_primary {
+	    background-color: $mainBackgroundColor;
 
-        background: {
-            image: $newsImageSecondary, $newsImagePrimary;
-            size: cover;
-            repeat: no-repeat;
-            position: center center, bottom center;
-        }
+        &::before {
+    		content: '';
+    		position: absolute;
+            top: 0;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+    		opacity: 0.15;
+
+    		background: {
+	    			image: $newsImagePrimary;
+	    			size: cover;
+	    			repeat: no-repeat;
+	    			position: center right;
+    		}
+    	}
     }
+
+    &_background_secondary {
+	    background-color: $mainBackgroundColor;
+
+        &::before {
+    		content: '';
+    		position: absolute;
+            top: 0;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+    		opacity: 0.5;
+
+    		background: {
+	    			image: $newsImageSecondary;
+	    			size: cover;
+	    			repeat: no-repeat;
+	    			position: center;
+    		}
+    	}
+    }
+
 }
