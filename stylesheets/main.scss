@@ -65,6 +65,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 	&__paragraph {
 		letter-spacing: 0.83px;
 		line-height: 13px;
+        font-style: italic;
 		max-width: 156ch;
 	}
 
@@ -162,7 +163,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 			color: $bgPersonColor;
 			repeat: no-repeat;
 			size: cover;
-		} 
+		}
 
 		&_first {
 			background-image: $firstPersonImg;
@@ -206,7 +207,7 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		padding: 79px 10px 65px;
 
 		opacity: 0;
-		
+
 		background-color: $crewLinkColor;
 		color: $colorWhite;
 
