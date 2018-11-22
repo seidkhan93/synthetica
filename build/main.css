@@ -5681,8 +5681,22 @@ readers do not read off random characters that represent icons */
     height: 50px;
     width: 50px;
     margin-right: 20px; }
-  .statistics_margin-top {
-    margin-top: 160px; }
+
+.row_top-padding {
+  padding-top: 70px; }
+
+.row_bottom-padding {
+  padding-bottom: 15px; }
+
+.row_fixed-height {
+  position: relative;
+  height: 400px; }
+
+.col_block-border {
+  border-right: 2px solid rgba(255, 255, 255, 0.25); }
+
+.col_bottom-padding {
+  padding-bottom: 15px; }
 
 @media screen and (max-width: 1200px) {
   .row_fixed-height {
@@ -5692,11 +5706,13 @@ readers do not read off random characters that represent icons */
   .row_fixed-height {
     height: 300px; } }
 
-.col_right-border {
-  border-right: 2px solid rgba(255, 255, 255, 0.25); }
+@media screen and (min-width: 768px) {
+  .col_block-border {
+    border-right: 2px solid rgba(255, 255, 255, 0.25); } }
 
-.col_bottom-padding {
-  padding-bottom: 15px; }
+@media screen and (max-width: 767px) {
+  .col_block-border {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25); } }
 
 .footer {
   position: relative;
@@ -5728,6 +5744,8 @@ readers do not read off random characters that represent icons */
     display: inline-block;
     overflow: hidden;
     white-space: nowrap; }
+  .footer_padding-right {
+    padding-right: 60px; }
   .footer_copyright {
     padding-top: 32px;
     padding-bottom: 100px;
