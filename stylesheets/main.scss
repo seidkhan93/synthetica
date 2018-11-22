@@ -23,6 +23,14 @@ $promoBackgroundColor: #414a52;
 $bgMask: url("../stylesheets/images/Mask.jpg");
 $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 
+//article
+$firstArticleImg: url("../stylesheets/images/articles-1.png");
+$secondArticleImg: url("../stylesheets/images/articles-2.png");
+$thirdArticleImg: url("../stylesheets/images/articles-3.png");
+$articleBgColor: #d7dae0;
+$articleMaskColor: #414a52;
+$articleBorderColor: #e1e3e7;
+
 //main section
 .main {
 	position: relative;
@@ -173,16 +181,16 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		&_second {
 			background-image: $secondPersonImg;
 			background-position: center;
-
 		}
+
 		&_third {
 			background-image: $thirdPersonImg;
-			background-position: -150px center;
+			background-position: 40% center;
 		}
 
 		&_last {
 			background-image: $lastPersonImg;
-			background-position: -50px center;
+			background-position: 20% center;
 		}
 
 		&::before {
@@ -266,7 +274,6 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 
 
 .progress {
-
 	&__title {
 		margin-bottom: 15px;
 
@@ -276,10 +283,6 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		letter-spacing: 1.73px;
 		color: $colorLead;
 		font-weight: 500;
-	}
-
-	&__bar:not([value]) {
-   		/* Styling here */
 	}
 
 	&__bar[value] {
@@ -338,10 +341,10 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 //statistics
 .statistics {
 
-		position: relative;
-	  text-align: center;
-	  color: $colorWhite;
-	  min-height: 400px;
+	position: relative;
+	text-align: center;
+	color: $colorWhite;
+	min-height: 400px;
 
     background: {
         color: $mainBackgroundColor;
@@ -365,8 +368,8 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 		}
 
     &__description {
-    		text-transform: uppercase;
-		}
+    	text-transform: uppercase;
+	}
 
     &__logo {
         height: 50px;
@@ -422,55 +425,72 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
     .col_block-border {
 				border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 		}
+
+	&_margin-top {
+			margin-top: 160px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+  	.row_fixed-height {
+		height: 350px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.row_fixed-height {
+	    		height: 300px;
+	}
+}
+
+.col {
+	&_right-border {
+			border-right: 2px solid rgba(255, 255, 255, 0.25);
+	}
+
+    &_bottom-padding {
+        padding-bottom: 15px;
+	}
 }
 
 
 
 //footer
 .footer {
-		position: relative;
-		background-color: $mainBackgroundColor;
+	position: relative;
+	background-color: $mainBackgroundColor;
 
-		&__header {
-				font-size: 16px;
-				line-height: 19px;
-				letter-spacing: 8px;
-				text-transform: uppercase;
-				padding-bottom: 27px;
-				padding-top: 72px;
-		}
+	&__header {
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 8px;
+		text-transform: uppercase;
+		padding-bottom: 27px;
+		padding-top: 72px;
+	}
 
-		&__logo {
-				margin-right: 18px;
-		}
+	&__logo {
+		margin-right: 18px;
+	}
 
-		&__title {
-				margin-left: 18px;
-		}
+	&__title {
+		margin-left: 18px;
+	}
 
-		&__subtitle {
-				font-size: 14px;
-				line-height: 25px;
-		}
+	&__subtitle {
+		font-size: 14px;
+		line-height: 25px;
+	}
 
-		&_border {
-				min-height: 50px;
-				width: 100%;
-				border-bottom: 2px solid $white;
-		}
+	&_border {
+		min-height: 50px;
+		width: 100%;
+		border-bottom: 2px solid $white;
+	}
 
-		&__nav-bar {
-				padding-top: 36px;
-		}
-
-		&__list {
-				padding-right: 60px;
-				text-decoration: none;
-				clear: both;
-    		display: inline-block;
-    		overflow: hidden;
-    		white-space: nowrap;
-    }
+	&__nav-bar {
+		padding-top: 36px;
+	}
 
     &_padding-right{
     		padding-right: 60px;
@@ -482,9 +502,24 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
 				color: rgba(255, 255, 255, 0.5);
 		}
 
-		&__links {
-				text-decoration: none;
-		}
+	&__list {
+		padding-right: 60px;
+		text-decoration: none;
+		clear: both;
+		display: inline-block;
+		overflow: hidden;
+		white-space: nowrap;
+}
+
+	&_copyright {
+		padding-top: 32px;
+		padding-bottom: 100px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	&__links {
+		text-decoration: none;
+	}
 }
 
 //promotion section
@@ -500,11 +535,11 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
         padding: 85px 0 100px;
     }
 
-     &__info_embarked {
-         width: 315px;
-         height: 2px;
-         background-color: $colorWhite;
-     }
+    &__info_embarked {
+        width: 310px;
+        height: 2px;
+        background-color: $colorWhite;
+    }
 
     &__info {
         padding: 166px 0 172px;
@@ -558,5 +593,128 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
         z-index: 100;
         background-color: transparent;
     }
-
 }
+
+// Articles
+
+.articles {
+	display: block;
+	padding: 126px 0;
+
+	background-color: $bgCrew;
+
+	&__title {
+		margin-left: 64px;
+		margin-bottom: 77px;
+	}
+}
+
+.article {
+	&__header {
+		display: block;
+		height: 225px;
+		position: relative;
+		margin-bottom: 22px;
+
+		background: {
+			color: $articleMaskColor;
+			repeat: no-repeat;
+			position: center;
+			size: cover;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			height: 100%;
+			width: 100%;
+
+			background-color: $articleMaskColor;
+			opacity: .6;
+		}
+
+		&_first {
+			background-image: $firstArticleImg;
+		}
+
+		&_second {
+			background-image: $secondArticleImg;
+		}
+
+		&_third {
+			background-image: $thirdArticleImg;
+		}
+	}
+
+	&__feature {
+		position: absolute;
+		display: inline-block;
+		padding: 4px 10px;
+		bottom: 15px;
+		left: 10px;
+
+		font-family: inherit;
+		font-size: 13px;
+		line-height: 15px;
+		font-weight: 500;
+		color: $colorWhite;
+		
+		background-color: $colorPrimary;
+		border-radius: 40px;
+
+		z-index: 1000;
+	}
+
+	&__content {
+		display: block;
+		margin-bottom: 35px;
+	}
+
+	&__title {
+		font-family: inherit;
+		font-size: 20px;
+		line-height: 30px;
+		color: $art_color;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+
+	&__subtitle {
+		font-family: inherit;
+		font-size: 15px;
+		line-height: 27px;
+		color: $colorLead;
+		font-weight: 300;
+	}
+
+	&__footer {
+		display: block;
+		padding: 14px 0;
+
+		border-top: 1px solid $articleBorderColor;
+	}
+
+	&__link {
+		font-family: inherit;
+		font-size: 13px;
+		line-height: 15px;
+		font-weight: 400;
+		color: $colorPrimary;
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
