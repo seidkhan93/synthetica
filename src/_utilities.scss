@@ -71,7 +71,15 @@
 .p-none {
 	padding: 0 !important;
 }
+@media (min-width: 320px) {
+    .m-b-5-mob {
+        margin-bottom: 5px !important;
+    }
 
+    .hr-mob {
+        width: 70% !important;
+    }
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 	.m-b-sm-20 {
@@ -105,6 +113,13 @@
 	.m-sm-none {
 		margin: 0 !important;
 	}
+
+    .lg-paragraph {
+        font-size: 15px;
+        line-height: 26px !important;
+        width: 78ch !important;
+        top: 328px !important;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -140,6 +155,13 @@
 	.m-md-none {
 		margin: 0 !important;
 	}
+
+    .lg-paragraph {
+        font-size: 15px;
+        line-height: 26px !important;
+        width: 78ch !important;
+        top: 328px !important;
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -179,12 +201,14 @@
 	.lg-title {
         font-size: 45px !important;
         line-height: 60px !important;
+        width: 31ch !important;
+
     }
 
     .lg-paragraph {
         font-size: 15px;
         line-height: 26px !important;
-        max-width: 78ch !important;
+        width: 78ch !important;
         top: 328px !important;
     }
 

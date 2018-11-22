@@ -67,14 +67,14 @@ $articleBorderColor: #e1e3e7;
 		font-size: 24px;
 		line-height: 30px;
 		letter-spacing: 0.75px;
-		max-width: 31ch;
+	    width: 18ch;
 	}
 
 	&__paragraph {
 		letter-spacing: 0.83px;
-		line-height: 13px;
+		line-height: 22px;
         font-style: italic;
-		max-width: 156ch;
+		width: 28ch;
 	}
 
 	&_sticked_bar {
@@ -103,7 +103,7 @@ $articleBorderColor: #e1e3e7;
 	&_sticked_paragraph {
 		position: absolute;
 		left: 50%;
-		top: 338px;
+		top: 318px;
 		margin: 0;
 		transform: translateX(-50%);
 	}
@@ -661,7 +661,7 @@ $articleBorderColor: #e1e3e7;
 		line-height: 15px;
 		font-weight: 500;
 		color: $colorWhite;
-		
+
 		background-color: $colorPrimary;
 		border-radius: 40px;
 
@@ -706,15 +706,3 @@ $articleBorderColor: #e1e3e7;
 		text-decoration: none;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
