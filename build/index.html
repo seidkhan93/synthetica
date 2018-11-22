@@ -11,21 +11,51 @@
     <!-- Main -->
 
     <section class="main">
-        <div class="container">
-            <div class="main__content main__content_0"></div>
-            <div class="main__content main__content_1"></div>
-            <div class="main__content main__content_2"></div>
-            <div class="main__content main__content_3"></div>
-            <div class="row  main_sticked_bar">
-                <div class="col">
-                    <div class="main__bar d-flex justify-content-center">
-                        <div class="main__input"  data-id="0" id="0">
-                        </div>
-                        <div class="main__input"  data-id="1" id="1">
-                        </div>
-                        <div class="main__input"  data-id="2" id="2">
-                        </div>
-                        <div class="main__input"  data-id="3" id="3">
+        <div class="container-fluid h-100">
+            <header class="header">
+                <div class="header__hero d-flex flex-column flex-md-row justify-content-md-end">
+                    <div class="header__toggle d-md-none">
+                        <a class="toggle" aria-label="Open Navigation">
+                            <span class="toggle__child"></span>
+                            <span class="toggle__child"></span>
+                            <span class="toggle__child"></span>
+                        </a>
+                    </div>
+                    <nav class="nav header__nav">
+                        <ul class="nav__list d-flex flex-column flex-md-row">
+                            <li class="nav__item main__item d-flex justify-content-center">
+                                <a href="#" class="link">The collection</a>
+                            </li>
+                            <li class="nav__item main__item d-flex justify-content-center">
+                                <a href="#" class="link">The crew</a>
+                            </li>
+                            <li class="nav__item main__item d-flex justify-content-center">
+                                <a href="#" class="link">Articles</a>
+                            </li>
+                            <li class="nav__item main__item d-flex justify-content-center">
+                                <a href="#" class="link">Freeies</a>
+                            </li>
+                        </ul>
+                    </nav>                     
+                </div>             
+            </header>
+
+            <div class="main__hero">
+                <div class="main__content main__content_0"></div>
+                <div class="main__content main__content_1"></div>
+                <div class="main__content main__content_2"></div>
+                <div class="main__content main__content_3"></div>
+                <div class="row main_sticked_bar">
+                    <div class="col">
+                        <div class="main__bar d-flex justify-content-center">
+                            <div class="main__input"  data-id="0" id="0">
+                            </div>
+                            <div class="main__input"  data-id="1" id="1">
+                            </div>
+                            <div class="main__input"  data-id="2" id="2">
+                            </div>
+                            <div class="main__input"  data-id="3" id="3">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,7 +243,8 @@
     <!-- Promotion -->
 
     <section class="promotion">
-            <div class="row">
+        <div class="container-fluid p-none">
+            <div class="row no-gutters">
                 <div class="col-12 col-md-6 promotion__info promotion_background_primary text_center">
                     <p class="promotion_positioned justify-content-center">
                         03/01/2016
@@ -229,11 +260,12 @@
                 <div class="col-12 col-md-6 promotion__info promotion_background_secondary">
                 </div>
             </div>
-            <div class="row promotion_distanced">
+            <div class="row no-gutters promotion_distanced">
                 <div class="col text_center">
                     <button class="button button_outlined button_small" name="button">View more</button>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Statistics -->
@@ -390,6 +422,7 @@
     <!-- Jquery-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="toggle.js"></script>
     <script type="text/javascript" src="videoscript.js"></script>
     <script type="text/javascript" src="numbers.js"></script>
     <script src="tab.js"></script>
