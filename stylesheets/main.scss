@@ -31,31 +31,105 @@ $articleBgColor: #d7dae0;
 $articleMaskColor: #414a52;
 $articleBorderColor: #e1e3e7;
 
-//main section
-.main {
-	position: relative;
-	text-align: center;
-	font-family: inherit;
-	color: $colorWhite;
-	height: 680px;
+// borderColor
+$borderColor: #e5e7e9;
 
-	background: {
-		color: $mainBackgroundColor;
+//nav 
+.nav {
+	display: block;
+	overflow: hidden;
+	transition: height .2s;
+
+	@media screen and (max-width: 768px) {
+	   	& {
+	   		height: 0;
+	   	}
+
+		&_is_active {
+			height: 160px;
+		}
 	}
 
-	&::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0.5;
+	height: auto;
 
-		background: {
-			image: $mainImage;
-			size: cover;
-			repeat: no-repeat;
-			position: center;
+
+	&__item {
+		text-align: center;
+		margin: 10px auto;
+	}
+
+}
+
+//header 
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+	background-color: $bgColor;
+
+	z-index: 10000;
+
+	&__hero {
+		position: relative;
+		padding: 45px 0 30px;
+	}
+
+	&__toggle {
+		position: absolute;
+		top: 30px;
+		right: 20px;
+	}
+
+	&__nav {
+		@media screen and (min-width: 992px) {
+		   	margin-right: 100px;
+		   	position: relative;
+			z-index: 10000;
+		}
+	}
+}
+
+//main section
+.main {
+	display: block;
+	height: 680px;
+
+	@media screen and (min-width: 767px) {
+		&__item {
+			padding: 0 27px;
+			border-right: 1px solid $borderColor;
+		}
+
+		&__item:last-child {
+			border-right: none;
+		}
+	}
+
+	&__hero {
+		display: block;
+		position: relative;
+		text-align: center;
+		font-family: inherit;
+		color: $colorWhite;
+		background-color: $mainBackgroundColor;
+		height: 100%;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0.5;
+
+			background: {
+				image: $mainImage;
+				size: cover;
+				repeat: no-repeat;
+				position: center;
+			}
 		}
 	}
 

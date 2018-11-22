@@ -1,0 +1,56 @@
+@import "variables";
+
+.toggle {
+	display: block;
+	position: relative;
+
+	width: 20px;
+	height: 16px;
+
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+
+	cursor: pointer;
+	&__child {
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+
+		line-height: 20px;
+
+		background-color: $toggleColor;
+
+		transform: rotate(0deg);
+		opacity: 1;
+		transition: .25s ease-in-out;
+
+		&:first-child {
+			top: 0;
+
+			&.open {
+				top: 7px;
+				transform: rotate(135deg);
+			}
+		}
+
+		&:nth-child(2) {
+			top: 7px;
+			transition: .1s ease-in-out;
+
+			&.open {
+				opacity: 0;
+				left: -20px;
+			}
+		}
+
+		&:last-child {
+			top: 14px;
+			&.open {
+				top: 7px;
+				transform: rotate(-135deg);
+			}
+		}
+	}
+}
+
