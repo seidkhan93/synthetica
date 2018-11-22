@@ -387,12 +387,11 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
     &_fixed-height {
         position: relative;
         height: 400px;
-        background: $bgColorBenefits;
 	}
 }
 
 .col {
-		&_right-border {
+		&_block-border {
 				border-right: 2px solid rgba(255, 255, 255, 0.25);
 		}
 
@@ -412,6 +411,21 @@ $statisticsImage: url("../stylesheets/images/num_bg.jpg");
         height: 300px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .col_block-border {
+				border-right: 2px solid rgba(255, 255, 255, 0.25);
+		}
+}
+
+@media screen and (max-width: 767px) {
+    .col_block-border {
+				border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+		}
+}
+
+
+
 //footer
 .footer {
 		position: relative;
