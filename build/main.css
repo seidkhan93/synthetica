@@ -5763,7 +5763,7 @@ readers do not read off random characters that represent icons */
   position: relative;
   text-align: center;
   color: #ffffff;
-  min-height: 400px;
+  height: 400px;
   background-color: #414a52; }
   .statistics::before {
     content: '';
@@ -5783,6 +5783,8 @@ readers do not read off random characters that represent icons */
     height: 50px;
     width: 50px;
     margin-right: 20px; }
+  .statistics_padding-left {
+    padding-left: 20px; }
 
 .row_top-padding {
   padding-top: 70px; }
@@ -5800,14 +5802,6 @@ readers do not read off random characters that represent icons */
 .col_bottom-padding {
   padding-bottom: 15px; }
 
-@media screen and (max-width: 1200px) {
-  .row_fixed-height {
-    height: 350px; } }
-
-@media screen and (max-width: 992px) {
-  .row_fixed-height {
-    height: 300px; } }
-
 @media screen and (min-width: 768px) {
   .col_block-border {
     border-right: 2px solid rgba(255, 255, 255, 0.25); } }
@@ -5815,8 +5809,12 @@ readers do not read off random characters that represent icons */
 @media screen and (max-width: 767px) {
   .col_block-border {
     border-bottom: 2px solid rgba(255, 255, 255, 0.25); }
-  _margin-top {
-    margin-top: 160px; } }
+  .margin-top {
+    margin-top: 160px; }
+  .margin-bottom {
+    margin-bottom: 50px; }
+  .padding-bottom {
+    padding-bottom: 50px; } }
 
 @media screen and (max-width: 1200px) {
   .row_fixed-height {
